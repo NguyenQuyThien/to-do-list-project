@@ -1,0 +1,73 @@
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+.completed {
+    color: red;
+    text-decoration: line-through;
+}
+
+body {
+    font-family: Roboto;
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: normal;
+    background: #2980b9;
+    color: white;
+    text-transform: uppercase;
+}
+.fa-plus {
+    float: right;
+}
+input {
+    font-size: 18px;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;                 /***/
+    border: 3px solid rgba(0,0,0,0);    /*xoa chi tiet border nho o ben trong input*/
+}
+input:focus{
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    /* color: #666; */
+    color: green;
+}
+li:nth-child(2n){
+    background: #f7f7f7;
+}
+span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;                     /*an span*/
+    display: inline-block;          /**/
+    transition: 0.2s linear;        /**/
+    opacity: 0;                     /*an icon*/
+}
+li:hover span {
+    width: 40px;                    /*hien span*/
+    opacity: 1.0;                   /*hien icon*/
+}
